@@ -1,0 +1,5 @@
+1|Veg Pulao with Raita|Basmati rice, mixed vegetables, yogurt, cumin, spices|Light and flavorful rice cooked with vegetables served with cooling raita.|Dinner
+2|Palak Paneer with Roti|Spinach, paneer, garlic, onion, spices, whole wheat flour|Soft paneer cubes cooked in creamy spinach gravy served with fresh roti.|Dinner
+3|Vegetable Khichdi|Rice, lentils, mixed vegetables, turmeric, cumin|Comforting one-pot meal made with rice, lentils, and mild spices.|Dinner
+4|Matar Paneer with Jeera Rice|Paneer, green peas, tomato gravy, cumin rice, spices|Paneer and peas cooked in spiced gravy served with cumin-flavored rice.|Dinner
+5|Veg Hakka Noodles|Noodles, cabbage, capsicum, carrot, soy sauce, garlic|Stir-fried noodles with vegetables in Indo-Chinese style.|Dinner

@@ -1,0 +1,5 @@
+1|Aloo Paratha|Wheat flour, potatoes, green chili, coriander, spices, butter|Stuffed whole wheat flatbread filled with spicy mashed potatoes and cooked with butter.|Breakfast
+2|Masala Dosa|Rice batter, urad dal, potatoes, mustard seeds, curry leaves|Crispy fermented dosa filled with spiced potato masala served with chutney and sambar.|Breakfast
+3|Poha|Flattened rice, onion, peanuts, turmeric, curry leaves, lemon|Light and fluffy flattened rice dish tempered with spices and peanuts.|Breakfast
+4|Vegetable Upma|Semolina, mixed vegetables, mustard seeds, curry leaves, green chili|Soft and savory semolina dish cooked with vegetables and mild spices.|Breakfast
+5|Oats Porridge|Oats, milk, honey, dry fruits, sugar|Healthy fiber-rich oats cooked with milk and topped with dry fruits.|Breakfast

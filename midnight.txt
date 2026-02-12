@@ -1,0 +1,5 @@
+1|Maggi Masala Noodles|Instant noodles, masala tastemaker, water, vegetables (optional)|Quick and spicy instant noodles perfect for late-night hunger.|Midnight
+2|Cheese Grilled Sandwich|Bread slices, butter, cheese, vegetables, spices|Crispy grilled sandwich filled with melted cheese and veggies.|Midnight
+3|French Fries with Dip|Potatoes, salt, oil, tomato ketchup or mayo|Crispy deep-fried potato fries served with tasty dip.|Midnight
+4|Chocolate Brownie|Flour, cocoa powder, sugar, butter, chocolate|Rich and fudgy chocolate brownie for sweet cravings.|Midnight
+5|Cold Coffee|Milk, coffee powder, sugar, ice cubes|Refreshing chilled coffee blended with milk and ice.|Midnight

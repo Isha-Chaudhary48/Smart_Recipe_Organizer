@@ -323,12 +323,16 @@ class RecipeApp:
             choice = int(input("Enter any choice from above: "))
             match choice:
                 case 1:
-                    name = input("Enter your name")
+                    name = input("Enter your name: ")
                     max_attempts = 3
                     attempt = 0
                     while True:
-                        userEmail = input("Enter your email id")
+                        userEmail = input("Enter your email id: ")
                         found = False
+                        if not os.path.exists("userData.txt"):
+                            with open("userData.txt","w"):
+                                pass                            
+                          
                         with open("userData.txt","r") as f:
                             for line in f:
                                 data = line.strip().split("|")

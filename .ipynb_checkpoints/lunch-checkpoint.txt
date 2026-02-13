@@ -1,0 +1,5 @@
+1|Veg Biryani|Basmati rice, mixed vegetables, yogurt, spices, saffron|Aromatic basmati rice cooked with mixed vegetables and traditional Indian spices.|Lunch
+2|Rajma Chawal|Kidney beans, tomatoes, onion, garlic, rice, spices|Protein-rich kidney beans curry served with steamed rice.|Lunch
+3|Paneer Butter Masala with Naan|Paneer, tomato gravy, butter, cream, spices, naan|Soft paneer cubes cooked in creamy tomato gravy served with naan bread.|Lunch
+4|Dal Tadka with Jeera Rice|Yellow lentils, cumin seeds, garlic, ghee, basmati rice|Tempered lentil curry served with cumin-flavored rice.|Lunch
+5|Chole Bhature|Chickpeas, tomatoes, onion, spices, flour, yogurt|Spicy chickpea curry served with deep-fried fluffy bread.|Lunch

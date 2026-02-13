@@ -1,5 +1,6 @@
 import re 
 import secrets
+import os
 
 # ABSTRACT CLASS
 from abc import ABC , abstractmethod
@@ -66,10 +67,10 @@ class UserRecipe:
         self.userId = userId
             
     def createRecipe(self):
-        title = input("Enter the name of the recipe")
-        ingredients = input("Enter the ingredients used in recipe")
-        description = input("Enter full detail of the recipe")
-        category = input("Enter its category")
+        title = input("Enter the name of the recipe: ")
+        ingredients = input("Enter the ingredients used in recipe: ")
+        description = input("Enter full detail of the recipe: ")
+        category = input("Enter its category: ")
 
         recipe = {
             "id" : self.userId,
@@ -93,6 +94,10 @@ class DisplayRecipe(Display):
         self.id = id
     def display_recipe(self):
         found = False
+        if not os.path.exists(self.file_name):
+            with open(self.file_name,"w"):
+                pass
+                       
         with open(self.file_name,"r") as f:
             print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
             for line in f:
@@ -102,6 +107,7 @@ class DisplayRecipe(Display):
                     print(f"Ingredients:  {data[2]} ")
                     print(f"Description:    {data[3]} ")
                     print(f"Category: {data[4]} ")
+                    print('\n')
                     found = True
             print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
             print('\n')
@@ -123,7 +129,7 @@ class RecipeSuggestion():
             print("4. Midnight cravings")
             print("5. Exit")
             print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
-            choice = int(input("Enter your choice"))
+            choice = int(input("Enter your choice: "))
             match choice:
                 case 1:
                     self.breakfastChoice()
@@ -153,7 +159,7 @@ class RecipeSuggestion():
             print("5. Oats Porridge")
             print("6. Exit")
             print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
-            choice = int(input("Enter your choice which recipe you want "))
+            choice = int(input("Enter your choice which recipe you want: "))
             file_name = "breakfast.txt"
             match choice:
                 case 1:
@@ -190,7 +196,7 @@ class RecipeSuggestion():
             print("5. Chole Bhature")
             print("6. Exit")
             print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
-            choice = int(input("Enter your choice which recipe you want "))
+            choice = int(input("Enter your choice which recipe you want: "))
             file_name = "lunch.txt"
             match choice:
                 case 1:
@@ -227,7 +233,7 @@ class RecipeSuggestion():
             print("5. Veg Hakka Noodles")
             print("6. Exit")
             print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
-            choice = int(input("Enter your choice which recipe you want "))
+            choice = int(input("Enter your choice which recipe you want: "))
             file_name = "dinner.txt"
             match choice:
                 case 1:
@@ -264,7 +270,7 @@ class RecipeSuggestion():
             print("5. Cold Coffee")
             print("6. Exit")
             print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
-            choice = int(input("Enter your choice which recipe you want "))
+            choice = int(input("Enter your choice which recipe you want: "))
             file_name = "midnight.txt"
             match choice:
                 case 1:
@@ -299,6 +305,9 @@ class RecipeApp:
         pass
     def menu(self):
         self.auth = Auth()
+        print("\t**************************************")
+        print("\t\tSMART RECIPE ORGANIZER")
+        print("\t**************************************")
         while True:
             print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
             print("WELCOME TO OUR RECIPE PAGE")
@@ -346,7 +355,7 @@ class RecipeApp:
                                 attempt +=1
                                 print(emailMsg)
                     while True:
-                        password = input("Enter password")
+                        password = input("Enter password: ")
                         passwordStatus,passwordMsg = self.auth.check_password(password)
                         if passwordStatus:
                             print(passwordMsg)
@@ -359,9 +368,12 @@ class RecipeApp:
                             print("----------------------------------")
                             
                 case 2:
-                    inputUserId = input("Enter your user id :")
+                    inputUserId = input("Enter your user id: ")
                     inputPassword = input("Enter password: ")
                     found = False
+                    if not os.path.exists("userData.txt"):
+                        with open("userData.txt","w"):
+                            pass
                     with open("userData.txt","r") as f:
                         for line in f:
                             data = line.strip().split("|")
@@ -385,7 +397,7 @@ class RecipeApp:
                         print("4. Exit")
                         print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
                         print('\n')
-                        choice = int(input("Enter Your choice"))
+                        choice = int(input("Enter Your choice: "))
                         match choice:
                             case 1:
                                 userRecipe = UserRecipe(userId)
